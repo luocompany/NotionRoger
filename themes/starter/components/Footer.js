@@ -35,33 +35,7 @@ export const Footer = props => {
               </div>
             </div>
 
-            {/* 中间三列菜单组 */}
-            {STARTER_FOOTER_LINK_GROUP?.map((item, index) => {
-              return (
-                <div
-                  key={index}
-                  className='w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12'>
-                  <div className='mb-10 w-full'>
-                    <h4 className='mb-9 text-lg font-semibold text-white'>
-                      {item.TITLE}
-                    </h4>
-                    <ul>
-                      {item?.LINK_GROUP?.map((l, i) => {
-                        return (
-                          <li key={i}>
-                            <Link
-                              href={l.URL}
-                              className='mb-3 inline-block text-base text-gray-7 hover:text-primary'>
-                              {l.TITLE}
-                            </Link>
-                          </li>
-                        )
-                      })}
-                    </ul>
-                  </div>
-                </div>
-              )
-            })}
+            
 
             {/* 页脚右侧最新博文 */}
             <div className='w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12'>
@@ -132,14 +106,7 @@ export const Footer = props => {
               <div className='w-full px-4 md:w-1/3 lg:w-1/2'>
                 <div className='my-1 flex justify-center md:justify-end'>
                   <p className='text-base text-gray-7'>
-                    Designed and Developed by
-                    <a
-                      href='https://github.com/tangly1024/NotionNext'
-                      rel='nofollow noopner noreferrer'
-                      target='_blank'
-                      className='px-1 text-gray-1 hover:underline'>
-                      NotionNext {siteConfig('VERSION')}
-                    </a>
+                    2025 Happy New Year!
                   </p>
                 </div>
               </div>
